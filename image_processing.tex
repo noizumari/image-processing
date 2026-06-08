@@ -1,0 +1,196 @@
+\documentclass[11pt,a4paper]{ltjsarticle}
+
+\usepackage[top=15mm,bottom=15mm,left=15mm,right=15mm]{geometry}
+\usepackage{amsmath,amssymb}
+\usepackage{pdfpages}
+\usepackage{bm}
+\usepackage{graphicx}
+\usepackage{ascmac}
+\usepackage{float}
+\usepackage{url}
+\usepackage[hidelinks]{hyperref}
+\usepackage{etoolbox}
+
+\begin{document}
+  \begin{center}
+    {\LARGE 画像処理プログラミング課題}
+  \end{center}
+
+  \begin{flushright}
+    EP24064 座光寺　陸\\
+    \today
+  \end{flushright}
+
+  \vspace{1cm}
+
+  \section{課題1}
+   \subsection{実験内容}
+    画質の調整(線形変換)について、プログラムの$D\_max$、$D\_min$の値を変更すると以下の画像図\ref{fig:woman-g}がどのようになるのか確認する。
+    また、ガンマ補正について、ガンマ値を変更すると図\ref{fig:woman-g2}がどのようになるか確認する。
+    \begin{figure}[H]
+    \centering
+    % 上段
+    \begin{minipage}{0.45\textwidth}
+        \centering
+        \includegraphics[width=\linewidth]{01_image/woman-g.jpg}
+        \caption{元のグレースケール画像}
+        \label{fig:woman-g}
+    \end{minipage}
+    \hfill
+    \begin{minipage}{0.45\textwidth}
+        \centering
+        \includegraphics[width=\linewidth]{01_image/woman-g2.jpg}
+        \caption{コントラストを低くしたグレースケール画像}
+        \label{fig:woman-g2}
+    \end{minipage}
+   \end{figure}
+   \subsection{線形変換の結果}
+     元の画像図\ref{fig:woman-g}に対して($D\_max$,$D\_min$)が(0,255)のでの線形変換後の画像を図\ref{fig:sen_defa}に、(0,150)での画像を図\ref{fig:sen_low}に、(100,255)での画像を図\ref{fig:sen_hi}に示す。
+     また、一枚の画像内にどのような画素値が含まれているかの分布を表した濃淡ヒストグラムで表す。図\ref{fig:wman-g}のヒストグラムを図\ref{fig:sen_defa_hist}に、
+     \begin{figure}[H]
+      \centering
+      % 上段
+      \begin{minipage}{0.45\textwidth}
+        \centering
+        \includegraphics[width=\linewidth]{01_image/output_defa.jpg}
+        \caption{(0,255)での線形変換後の画像}
+        \label{fig:sen_defa}
+      \end{minipage}
+      \hfill
+      \begin{minipage}{0.45\textwidth}
+        \centering
+        \includegraphics[width=\linewidth]{01_image/output_hi.jpg}
+        \caption{(100,255)での線形変換後の画像}
+        \label{fig:sen_hi}
+      \end{minipage}
+      \vspace{0.5cm}
+      \par
+    % 下段
+      \begin{minipage}{0.45\textwidth}
+        \centering 
+        \includegraphics[width=\linewidth]{01_image/output_low.jpg}
+        \caption{(0,150)での線形変換後の画像} 
+        \label{fig:sen_low}
+      \end{minipage}%
+      \hfill
+      \begin{minipage}{0.45\textwidth}
+      \end{minipage}
+     \end{figure}
+     \begin{figure}[H]
+      \centering
+      % 上段
+      \begin{minipage}{0.45\textwidth}
+        \centering
+        \includegraphics[width=\linewidth]{01_hist/senkei_defa_hist.png}
+        \caption{図\ref{fig:sen_defa}の濃淡ヒストグラム}
+        \label{fig:sen_defa_hist}
+      \end{minipage}
+      \hfill
+      \begin{minipage}{0.45\textwidth}
+        \centering
+        \includegraphics[width=\linewidth]{01_hist/senkei_after_hist_hi.png}
+        \caption{図\ref{fig:sen_hi}の濃淡ヒストグラム}
+        \label{fig:sen_hi_hist}
+      \end{minipage}
+      \vspace{0.5cm}
+      \par
+      \centering
+      % 上段
+      \begin{minipage}{0.45\textwidth}
+        \centering
+        \includegraphics[width=\linewidth]{01_hist/senkei_after_hist_low.png}
+        \caption{図\ref{fig:sen_low}の濃淡ヒストグラム}
+        \label{fig:sen_low_hist}
+      \end{minipage}
+      \hfill
+      \begin{minipage}{0.45\textwidth}
+      \end{minipage}
+    \end{figure}
+   \subsection{ガンマ補正の結果}
+    元の画像図\ref{fig:woman-g2}に対して$\gamma=5.0$の際のガンマ補正後の画像を図\ref{fig:gamma_defa}に、$\gamma=1.5$の際の画像を図\ref{fig:gamma_hi}に、$\gamma=0.5$の際の画像を図\ref{fig:gamma_low}に示す。
+    また、図\ref{fig:gamma_defa}の濃淡ヒストグラムを図\ref{fig:gamma_defa_hist}に、図\ref{fig:gamma_hi}の濃淡ヒストグラムを図\ref{fig:gamma_hi_hist}に、図\ref{fig:gamma_low}の濃淡ヒストグラムを図\ref{fig:gamma_low_hist}に示す。
+      \begin{figure}[H]
+      \centering
+      % 上段
+      \begin{minipage}{0.45\textwidth}
+        \centering
+        \includegraphics[width=\linewidth]{01_image/gamma_defa.jpg}
+        \caption{$\gamma=5.0$のガンマ補正後の画像}
+        \label{fig:gamma_defa}
+      \end{minipage}
+      \hfill
+      \begin{minipage}{0.45\textwidth}
+        \centering
+        \includegraphics[width=\linewidth]{01_image/gamma_hi.jpg}
+        \caption{$\gamma=1.5$のガンマ補正後の画像}
+        \label{fig:gamma_hi}
+      \end{minipage}
+      \vspace{0.5cm}
+      \par
+    % 下段
+      \begin{minipage}{0.45\textwidth}
+        \centering 
+        \includegraphics[width=\linewidth]{01_image/gamma_low.jpg}
+        \caption{$\gamma=0.5$のガンマ補正後の画像} 
+        \label{fig:gamma_low}
+      \end{minipage}%
+      \hfill
+      \begin{minipage}{0.45\textwidth}
+      \end{minipage}
+     \end{figure}
+           \begin{figure}[H]
+      \centering
+      % 上段
+      \begin{minipage}{0.45\textwidth}
+        \centering
+        \includegraphics[width=\linewidth]{01_hist/gamma_defa_hist.png}
+        \caption{図\ref{fig:gamma_defa}の濃淡ヒストグラム}
+        \label{fig:gamma_defa_hist}
+      \end{minipage}
+      \hfill
+      \begin{minipage}{0.45\textwidth}
+        \centering
+        \includegraphics[width=\linewidth]{01_hist/gamma_hi_hist.png}
+        \caption{図\ref{fig:gamma_hi}の濃淡ヒストグラム}
+        \label{fig:gamma_hi_hist}
+      \end{minipage}
+      \vspace{0.5cm}
+      \par
+    % 下段
+      \begin{minipage}{0.45\textwidth}
+        \centering 
+        \includegraphics[width=\linewidth]{01_hist/gamma_low_hist.png}
+        \caption{図\ref{fig:gamma_low}の濃淡ヒストグラム} 
+        \label{fig:gamma_low_hist}
+      \end{minipage}%
+      \hfill
+      \begin{minipage}{0.45\textwidth}
+      \end{minipage}
+     \end{figure}
+
+   \subsection{考察}
+  \section{課題2}
+   \subsection{実験内容}
+    平滑化について、プログラムのkernelの値を変更すると図\ref{fig:woman-goma},\ref{fig:woman_spike}がどの様になるか確認する。
+    また、ノイズを付与された画像からノイズを除去するには、どのフィルタを使うと効果的であるか、理由とともに考察する。
+    \begin{figure}[H]
+      \centering
+      \begin{minipage}{0.45\textwidth}
+        \centering
+        \includegraphics[width=\linewidth]{02_image/woman-goma.jpg}
+        \caption{ごま塩ノイズ画像}
+        \label{fig:woman-goma}
+      \end{minipage}
+      \hfill
+      \begin{minipage}{0.45\textwidth}
+        \centering
+        \includegraphics[width=\linewidth]{02_image/woman_spike.jpg}
+        \caption{スパイクノイズ画像}
+        \label{fig:woman_spike}
+      \end{minipage}
+    \end{figure}
+   \subsection{平滑化の結果}
+   
+
+   \subsection{ノイズ除去の結果}
+\end{document}
