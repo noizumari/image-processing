@@ -46,7 +46,7 @@
    \end{figure}
    \subsection{線形変換の結果}
      元の画像図\ref{fig:woman-g}に対して($D\_max$,$D\_min$)が(0,255)のでの線形変換後の画像を図\ref{fig:sen_defa}に、(0,150)での画像を図\ref{fig:sen_low}に、(100,255)での画像を図\ref{fig:sen_hi}に示す。
-     また、一枚の画像内にどのような画素値が含まれているかの分布を表した濃淡ヒストグラムで表す。図\ref{fig:woman-g}のヒストグラムを図\ref{fig:sen_defa_hist}に、
+     また、一枚の画像内にどのような画素値が含まれているかの分布を表した濃淡ヒストグラムで表す。図\ref{fig:woman-g}のヒストグラムを図\ref{fig:sen_defa_hist}に、図\ref{fig:sen_hi}のヒストグラムを図\ref{fig:sen_hi_hist}に、図\ref{fig:sen_low}のヒストグラムを図\ref{fig:sen_low_hist}に示す。
      \begin{figure}[H]
       \centering
       % 上段
@@ -190,7 +190,84 @@
       \end{minipage}
     \end{figure}
    \subsection{平滑化の結果}
-
+    平滑化効果が最も出やすいガウシアンフィルタで$ksize=(11, 11)$の際の画像を図\ref{fig:gausu_hi}に、$ksize=(5,5)$の際の画像を図\ref{fig:gausu_medi}に、$ksize=(3,3)$の際の画像を図\ref{fig:gausu_low}に示す。
+         \begin{figure}[H]
+      \centering
+      % 上段
+      \begin{minipage}{0.45\textwidth}
+        \centering
+        \includegraphics[width=\linewidth]{02_image/gaussian_hi.jpg}
+        \caption{$ksize=(11,11)$でのガウシアンフィルタ後の画像}
+        \label{fig:gausu_hi}
+      \end{minipage}
+      \hfill
+      \begin{minipage}{0.45\textwidth}
+        \centering
+        \includegraphics[width=\linewidth]{02_image/gaussian_median.jpg}
+        \caption{$ksize=(5,5)$でのガウシアンフィルタ後の画像}
+        \label{fig:gausu_medi}
+      \end{minipage}
+      \vspace{0.5cm}
+      \par
+    % 下段
+      \begin{minipage}{0.45\textwidth}
+        \centering 
+        \includegraphics[width=\linewidth]{02_image/gaussian_low.jpg}
+        \caption{$ksize=(3,3)$でのガウシアンフィルタ後の画像}  
+        \label{fig:gausu_low} 
+      \end{minipage}
+      \hfill
+      \begin{minipage}{0.45\textwidth}
+      \end{minipage}
+    \end{figure}
 
    \subsection{ノイズ除去の結果}
+    $ksize=5$に統一した状態でごま塩ノイズに移動平均フィルタを適用した結果を図に、スパイクノイズに移動平均フィルタを適用した結果を図に、
+    \begin{figure}[H]
+      \centering
+      % 上段
+      \begin{minipage}{0.45\textwidth}
+        \centering
+        \includegraphics[width=\linewidth]{02_image/movemean_goma.jpg}
+        \caption{ごま塩ノイズに移動平均フィルタを適用した画像}
+        \label{fig:movemean_goma}
+      \end{minipage}
+      \hfill
+      \begin{minipage}{0.45\textwidth}
+        \centering
+        \includegraphics[width=\linewidth]{02_image/movemean_spike.jpg}
+        \caption{スパイクノイズに移動平均フィルタを適用した画像}
+        \label{fig:movemean_spike}
+      \end{minipage}
+      \vspace{0.5cm}
+      \par
+      \begin{minipage}{0.45\textwidth}
+        \centering
+        \includegraphics[width=\linewidth]{02_image/gaussian_goma.jpg}
+        \caption{ごま塩ノイズにガウシアンフィルタを適用した画像}
+        \label{fig:gaussian_goma}
+      \end{minipage}
+      \hfill
+      \begin{minipage}{0.45\textwidth}
+        \centering
+        \includegraphics[width=\linewidth]{02_image/gaussian_spike.jpg}
+        \caption{スパイクノイズにガウシアンフィルタを適用した画像}
+        \label{fig:gaussian_spike}
+      \end{minipage}
+      \vspace{0.5cm}
+      \par
+            \begin{minipage}{0.45\textwidth}
+        \centering
+        \includegraphics[width=\linewidth]{02_image/medianfilter_goma.jpg}
+        \caption{ごま塩ノイズに中央値フィルタを適用した画像}
+        \label{fig:medianfilter_goma}
+      \end{minipage}
+      \hfill
+      \begin{minipage}{0.45\textwidth}
+        \centering
+        \includegraphics[width=\linewidth]{02_image/medianfilter_spike.jpg}
+        \caption{スパイクノイズに中央値フィルタを適用した画像}
+        \label{fig:medianfilter_spike}
+      \end{minipage}
+    \end{figure}
 \end{document}
