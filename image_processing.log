@@ -1,4 +1,4 @@
-This is LuaHBTeX, Version 1.24.0 (TeX Live 2026)  (format=lualatex 2026.5.1)  8 JUN 2026 12:15
+This is LuaHBTeX, Version 1.24.0 (TeX Live 2026)  (format=lualatex 2026.5.1)  8 JUN 2026 18:43
  restricted system commands enabled.
 **image_processing.tex
 (./image_processing.tex
@@ -1164,6 +1164,15 @@ LaTeX Font Info:    Font shape `JT3/gt/m/n' will be
 (Font)              scaled to size 11.09656pt on input line 27.
 LaTeX Font Info:    Font shape `JY3/gt/m/n' will be
 (Font)              scaled to size 11.09656pt on input line 27.
+
+! Missing $ inserted.
+<inserted text> 
+                $
+l.28 ...変換)について、プログラムのD_
+                                                  max、D_minの値を変更...
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
 LaTeX Font Info:    Calculating math sizes for size <10.95001> on input line 28
 .
 LaTeX Font Info:    Font shape `JY3/mc/m/n' will be
@@ -1171,7 +1180,6 @@ LaTeX Font Info:    Font shape `JY3/mc/m/n' will be
 LaTeX Font Info:    Font shape `JY3/mc/m/n' will be
 (Font)              scaled to size 4.62357pt on input line 28.
 LaTeX Font Info:    Trying to load font information for U+msa on input line 28.
-
 
 (c:/texlive/2026/texmf-dist/tex/latex/amsfonts/umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
@@ -1188,12 +1196,6 @@ LaTeX Font Info:    Font shape `JY3/gt/m/n' will be
 (Font)              scaled to size 6.47295pt on input line 28.
 LaTeX Font Info:    Font shape `JY3/gt/m/n' will be
 (Font)              scaled to size 4.62357pt on input line 28.
-(load cache: extra_lmroman7-regular.luc)
-LaTeX Font Info:    Font shape `JT3/mc/m/n' will be
-(Font)              scaled to size 6.47295pt on input line 28.
-(load cache: extra_lmroman5-regular.luc)
-LaTeX Font Info:    Font shape `JT3/mc/m/n' will be
-(Font)              scaled to size 4.62357pt on input line 28.
 <01_image/woman-g.jpg, id=42, 642.4pt x 481.8pt>
 File: 01_image/woman-g.jpg Graphic file (type jpg)
 <use 01_image/woman-g.jpg>
@@ -1208,150 +1210,367 @@ File: 01_image/woman-g2.jpg Graphic file (type jpg)
 <use 01_image/woman-g2.jpg>
 Package luatex.def Info: 01_image/woman-g2.jpg  used on input line 42.
 (luatex.def)             Requested size: 230.46576pt x 172.84973pt.
-<01_image/output_defa.jpg, id=50, 462.528pt x 346.896pt>
+
+! Missing $ inserted.
+<inserted text> 
+                $
+l.46    \end{figure}
+                    
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+! Missing \endgroup inserted.
+<inserted text> 
+                \endgroup 
+l.46    \end{figure}
+                    
+I've inserted something that you may have forgotten.
+(See the <inserted text> above.)
+With luck, this will get me unwedged. But if you
+really didn't forget anything, try typing `2' now; then
+my insertion and my current dilemma will both disappear.
+
+
+Overfull \hbox (552.33594pt too wide) in paragraph at lines 28--46
+[]|\JY3/mc/m/n/10.95001 画 |質 |の |調 |整 \TU/lmr/m/n/10.95001 (|\JY3/mc/
+m/n/10.95001 線 |形 |変 |換\TU/lmr/m/n/10.95001 ) |\JY3/mc/m/n/10.95001 
+に |つ |い |て []  |プ |ロ |グ |ラ |ム |の \TU/lmr/m/n/10.95001 D$[][
+]\OML/cmm/m/it/10.95001 ax[]D[]in[][][][][][][][][][][][][]\OT1/cmr/m/n/10.9500
+1 ([][]1[])[][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][]
+[][][][][][][][][][][]([][]2[])[][][][][][][][][][][][][][][][]$ 
+ []
+
+! Undefined control sequence.
+\endfigure ...box \columnwidth \fi \box \@currbox 
+                                                  \vskip \intextsep \relax 
+l.46    \end{figure}
+                    
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Missing number, treated as zero.
+<to be read again> 
+                   \vskip 
+l.46    \end{figure}
+                    
+A number should have been here; I inserted `0'.
+(If you can't figure out why I needed to see a number,
+look up `weird error' in the index to The TeXbook.)
+
+
+! LaTeX Error: \begin{document} ended by \end{figure}.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.46    \end{figure}
+                    
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+! Extra \endgroup.
+\end  ...end#1\endcsname \@checkend {#1}\endgroup 
+                                                  \UseHook {env/#1/after}\if...
+l.46    \end{figure}
+                    
+Things are pretty mixed up, but I think the worst is over.
+
+! Missing $ inserted.
+<inserted text> 
+                $
+l.48 ...像(図\ref{fig:woman-g})に対して(D_
+                                                  max,D_min)を変更した結..
+.
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+<01_image/output_defa.jpg, id=54, 462.528pt x 346.896pt>
 File: 01_image/output_defa.jpg Graphic file (type jpg)
 <use 01_image/output_defa.jpg>
 Package luatex.def Info: 01_image/output_defa.jpg  used on input line 55.
 (luatex.def)             Requested size: 230.46576pt x 172.84943pt.
-<01_image/output_hi.jpg, id=51, 462.528pt x 346.896pt>
+<01_image/output_hi.jpg, id=55, 462.528pt x 346.896pt>
 File: 01_image/output_hi.jpg Graphic file (type jpg)
 <use 01_image/output_hi.jpg>
 Package luatex.def Info: 01_image/output_hi.jpg  used on input line 62.
 (luatex.def)             Requested size: 230.46576pt x 172.84943pt.
-<01_image/output_low.jpg, id=52, 462.528pt x 346.896pt>
+<01_image/output_low.jpg, id=56, 462.528pt x 346.896pt>
 File: 01_image/output_low.jpg Graphic file (type jpg)
 <use 01_image/output_low.jpg>
 Package luatex.def Info: 01_image/output_low.jpg  used on input line 71.
 (luatex.def)             Requested size: 230.46576pt x 172.84943pt.
-<01_hist/senkei_defa_hist.png, id=53, 462.528pt x 346.896pt>
+! Missing $ inserted.
+<inserted text> 
+                $
+l.78      \end{figure}
+                      
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+! Missing \endgroup inserted.
+<inserted text> 
+                \endgroup 
+l.78      \end{figure}
+                      
+I've inserted something that you may have forgotten.
+(See the <inserted text> above.)
+With luck, this will get me unwedged. But if you
+really didn't forget anything, try typing `2' now; then
+my insertion and my current dilemma will both disappear.
+
+
+Overfull \hbox (939.098pt too wide) in paragraph at lines 48--78
+[]|\JY3/mc/m/n/10.95001 元 |の |画 |像 \TU/lmr/m/n/10.95001 (|\JY3/mc/m/n/1
+0.95001 図 []\TU/lmr/m/n/10.95001 1[]) |\JY3/mc/m/n/10.95001 に |対 |し |
+て \TU/lmr/m/n/10.95001 (D$[][]\OML/cmm/m/it/10.95001 ax; D[]in\OT1/cmr/m/n/10
+.95001 )[][][][][][][][][][][][][](0\OML/cmm/m/it/10.95001 ; \OT1/cmr/m/n/10.95
+001 255)[][][][][][][][][][][][][]3[][][](100\OML/cmm/m/it/10.95001 ; \OT1/cmr/
+m/n/10.95001 255)[][][][][][][]4[][][](0\OML/cmm/m/it/10.95001 ; \OT1/cmr/m/n/1
+0.95001 150)[][][][][][][]5[][][][][][][][][][][][][][]\OML/cmm/m/it/10.95001 t[][][][][][][][][][][][][][][][][][][][][]\OT1/cmr/m/n/10.95001 1[][][][][][][][][][][]6[][][][][]4[][][][][][][][][][]7[][][][][]5[][][][][][][][][][]8[][][][][][][][]$ 
+ []
+
+! Undefined control sequence.
+\endfigure ...box \columnwidth \fi \box \@currbox 
+                                                  \vskip \intextsep \relax 
+l.78      \end{figure}
+                      
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Missing number, treated as zero.
+<to be read again> 
+                   \vskip 
+l.78      \end{figure}
+                      
+A number should have been here; I inserted `0'.
+(If you can't figure out why I needed to see a number,
+look up `weird error' in the index to The TeXbook.)
+
+
+! LaTeX Error: \begin{document} ended by \end{figure}.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.78      \end{figure}
+                      
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+! Extra \endgroup.
+\end  ...end#1\endcsname \@checkend {#1}\endgroup 
+                                                  \UseHook {env/#1/after}\if...
+l.78      \end{figure}
+                      
+Things are pretty mixed up, but I think the worst is over.
+
+<01_hist/senkei_defa_hist.png, id=57, 462.528pt x 346.896pt>
 File: 01_hist/senkei_defa_hist.png Graphic file (type png)
 <use 01_hist/senkei_defa_hist.png>
 Package luatex.def Info: 01_hist/senkei_defa_hist.png  used on input line 84.
 (luatex.def)             Requested size: 230.46576pt x 172.84943pt.
-<01_hist/senkei_after_hist_hi.png, id=56, 462.528pt x 346.896pt>
+<01_hist/senkei_after_hist_hi.png, id=60, 462.528pt x 346.896pt>
 File: 01_hist/senkei_after_hist_hi.png Graphic file (type png)
 <use 01_hist/senkei_after_hist_hi.png>
 Package luatex.def Info: 01_hist/senkei_after_hist_hi.png  used on input line 9
 1.
 (luatex.def)             Requested size: 230.46576pt x 172.84943pt.
-<01_hist/senkei_after_hist_low.png, id=59, 462.528pt x 346.896pt>
+<01_hist/senkei_after_hist_low.png, id=63, 462.528pt x 346.896pt>
 File: 01_hist/senkei_after_hist_low.png Graphic file (type png)
 <use 01_hist/senkei_after_hist_low.png>
 Package luatex.def Info: 01_hist/senkei_after_hist_low.png  used on input line 
 101.
 (luatex.def)             Requested size: 230.46576pt x 172.84943pt.
- [1
-
-<./01_image/woman-g.jpg><./01_image/woman-g2.jpg>] [2<./01_image/output_defa.jpg
-><./01_image/output_hi.jpg><./01_image/output_low.jpg>]
-<01_image/gamma_defa.jpg, id=94, 462.528pt x 346.896pt>
+<01_image/gamma_defa.jpg, id=72, 462.528pt x 346.896pt>
 File: 01_image/gamma_defa.jpg Graphic file (type jpg)
 <use 01_image/gamma_defa.jpg>
-Package luatex.def Info: 01_image/gamma_defa.jpg  used on input line 117.
+Package luatex.def Info: 01_image/gamma_defa.jpg  used on input line 118.
 (luatex.def)             Requested size: 230.46576pt x 172.84943pt.
-LaTeX Font Info:    Calculating math sizes for size <9.85501> on input line 118
+LaTeX Font Info:    Calculating math sizes for size <9.85501> on input line 119
 .
 
-
 LaTeX Font Warning: Font shape `OT1/cmr/m/n' in size <4.5> not available
-(Font)              size <5> substituted on input line 118.
+(Font)              size <5> substituted on input line 119.
 
 
 LaTeX Font Warning: Font shape `OML/cmm/m/it' in size <4.5> not available
-(Font)              size <5> substituted on input line 118.
+(Font)              size <5> substituted on input line 119.
 
 
 LaTeX Font Warning: Font shape `OMS/cmsy/m/n' in size <4.5> not available
-(Font)              size <5> substituted on input line 118.
+(Font)              size <5> substituted on input line 119.
 
 LaTeX Font Info:    Font shape `JY3/mc/m/n' will be
-(Font)              scaled to size 5.82565pt on input line 118.
+(Font)              scaled to size 5.82565pt on input line 119.
 LaTeX Font Info:    Font shape `JY3/mc/m/n' will be
-(Font)              scaled to size 4.16121pt on input line 118.
+(Font)              scaled to size 4.16121pt on input line 119.
 
 LaTeX Font Warning: Font shape `OT1/cmr/bx/n' in size <4.5> not available
-(Font)              size <5> substituted on input line 118.
+(Font)              size <5> substituted on input line 119.
 
 
 LaTeX Font Warning: Font shape `OML/cmm/b/it' in size <4.5> not available
-(Font)              size <5> substituted on input line 118.
+(Font)              size <5> substituted on input line 119.
 
 
 LaTeX Font Warning: Font shape `OMS/cmsy/b/n' in size <4.5> not available
-(Font)              size <5> substituted on input line 118.
+(Font)              size <5> substituted on input line 119.
 
 LaTeX Font Info:    Font shape `JY3/gt/m/n' will be
-(Font)              scaled to size 8.32242pt on input line 118.
+(Font)              scaled to size 8.32242pt on input line 119.
 LaTeX Font Info:    Font shape `JY3/gt/m/n' will be
-(Font)              scaled to size 5.82565pt on input line 118.
+(Font)              scaled to size 5.82565pt on input line 119.
 LaTeX Font Info:    Font shape `JY3/gt/m/n' will be
-(Font)              scaled to size 4.16121pt on input line 118.
-<01_image/gamma_hi.jpg, id=95, 462.528pt x 346.896pt>
+(Font)              scaled to size 4.16121pt on input line 119.
+<01_image/gamma_hi.jpg, id=73, 462.528pt x 346.896pt>
 File: 01_image/gamma_hi.jpg Graphic file (type jpg)
 <use 01_image/gamma_hi.jpg>
-Package luatex.def Info: 01_image/gamma_hi.jpg  used on input line 124.
+Package luatex.def Info: 01_image/gamma_hi.jpg  used on input line 125.
 (luatex.def)             Requested size: 230.46576pt x 172.84943pt.
-<01_image/gamma_low.jpg, id=96, 462.528pt x 346.896pt>
+<01_image/gamma_low.jpg, id=74, 462.528pt x 346.896pt>
 File: 01_image/gamma_low.jpg Graphic file (type jpg)
 <use 01_image/gamma_low.jpg>
-Package luatex.def Info: 01_image/gamma_low.jpg  used on input line 133.
+Package luatex.def Info: 01_image/gamma_low.jpg  used on input line 134.
 (luatex.def)             Requested size: 230.46576pt x 172.84943pt.
-<01_hist/gamma_defa_hist.png, id=97, 462.528pt x 346.896pt>
+[1
+
+<./01_hist/senkei_defa_hist.png><./01_hist/senkei_after_hist_hi.png><./01_hist/s
+enkei_after_hist_low.png>]
+<01_hist/gamma_defa_hist.png, id=100, 462.528pt x 346.896pt>
 File: 01_hist/gamma_defa_hist.png Graphic file (type png)
 <use 01_hist/gamma_defa_hist.png>
-Package luatex.def Info: 01_hist/gamma_defa_hist.png  used on input line 146.
+Package luatex.def Info: 01_hist/gamma_defa_hist.png  used on input line 147.
 (luatex.def)             Requested size: 230.46576pt x 172.84943pt.
-<01_hist/gamma_hi_hist.png, id=100, 462.528pt x 346.896pt>
+<01_hist/gamma_hi_hist.png, id=103, 462.528pt x 346.896pt>
 File: 01_hist/gamma_hi_hist.png Graphic file (type png)
 <use 01_hist/gamma_hi_hist.png>
-Package luatex.def Info: 01_hist/gamma_hi_hist.png  used on input line 153.
+Package luatex.def Info: 01_hist/gamma_hi_hist.png  used on input line 154.
 (luatex.def)             Requested size: 230.46576pt x 172.84943pt.
-<01_hist/gamma_low_hist.png, id=103, 462.528pt x 346.896pt>
+<01_hist/gamma_low_hist.png, id=106, 462.528pt x 346.896pt>
 File: 01_hist/gamma_low_hist.png Graphic file (type png)
 <use 01_hist/gamma_low_hist.png>
-Package luatex.def Info: 01_hist/gamma_low_hist.png  used on input line 162.
+Package luatex.def Info: 01_hist/gamma_low_hist.png  used on input line 163.
 (luatex.def)             Requested size: 230.46576pt x 172.84943pt.
-[3<./01_hist/senkei_defa_hist.png><./01_hist/senkei_after_hist_hi.png><./01_hist
-/senkei_after_hist_low.png>] [4<./01_image/gamma_defa.jpg><./01_image/gamma_hi.j
-pg><./01_image/gamma_low.jpg>]
-warning  (file 02_image/woman_goma.jpg) (readjpg): unusual resolution of 1dpi by
- 1dpi
-
-warning  (internal): arithmetic number too big
-
-warning  (internal): arithmetic number too big
-! Dimension too large.
-<recently read> \dimen@ 
-                        
-l.180 ...idth=\linewidth]{02_image/woman_goma.jpg}
-                                                  
-I can't work with sizes bigger than about 19 feet.
-Continue and I'll use the largest value I can.
-
-<02_image/woman_goma.jpg, id=131, --32768.0pt x 0.0pt>
-! Dimension too large.
-<to be read again> 
-                   \advance 
-l.180 ...idth=\linewidth]{02_image/woman_goma.jpg}
-                                                  
-I can't work with sizes bigger than about 19 feet.
-Continue and I'll use the largest value I can.
-
-File: 02_image/woman_goma.jpg Graphic file (type jpg)
-<use 02_image/woman_goma.jpg>
-Package luatex.def Info: 02_image/woman_goma.jpg  used on input line 180.
-(luatex.def)             Requested size: 230.46576pt x 0.0pt.
-
-warning  (internal): arithmetic number too big
-
-warning  (internal): arithmetic number too big
-<02_image/woman-spike.jpg, id=132, 519.69438pt x 389.77078pt>
+ [2<./01_image/gamma_defa.jpg><./01_image/gamma_hi.jpg><./01_image/gamma_low.jpg
+>]
+<02_image/woman-goma.jpg, id=124, 154.176pt x 115.632pt>
+File: 02_image/woman-goma.jpg Graphic file (type jpg)
+<use 02_image/woman-goma.jpg>
+Package luatex.def Info: 02_image/woman-goma.jpg  used on input line 181.
+(luatex.def)             Requested size: 230.46576pt x 172.85297pt.
+<02_image/woman-spike.jpg, id=125, 519.69438pt x 389.77078pt>
 File: 02_image/woman-spike.jpg Graphic file (type jpg)
 <use 02_image/woman-spike.jpg>
-Package luatex.def Info: 02_image/woman-spike.jpg  used on input line 187.
+Package luatex.def Info: 02_image/woman-spike.jpg  used on input line 188.
 (luatex.def)             Requested size: 230.46576pt x 172.84973pt.
-[5<./01_hist/gamma_defa_hist.png><./01_hist/gamma_hi_hist.png><./01_hist/gamma_l
-ow_hist.png>] [6<./02_image/woman-spike.jpg>] (./image_processing.aux)
+ [3<./01_hist/gamma_defa_hist.png><./01_hist/gamma_hi_hist.png><./01_hist/gamma_
+low_hist.png>](load cache: extra_lmroman10-bold.luc)
+LaTeX Font Info:    Font shape `JT3/mc/b/n' in size <10> not available
+(Font)              Font shape `JT3/gt/m/n' tried instead on input line 194.
+LaTeX Font Info:    Font shape `JT3/gt/m/n' will be
+(Font)              scaled to size 8.44485pt on input line 194.
+LaTeX Font Info:    Font shape `JY3/mc/b/n' in size <10> not available
+(Font)              Font shape `JY3/gt/m/n' tried instead on input line 194.
+LaTeX Font Info:    Font shape `JY3/gt/m/n' will be
+(Font)              scaled to size 8.44485pt on input line 194.
+
+
+LaTeX Warning: Reference `fig:gausu_low' on page 4 undefined on input line 194.
+
+
+
+LaTeX Warning: Reference `fig:gausu_medi' on page 4 undefined on input line 194
+.
+
+
+LaTeX Warning: Reference `fig:gausu_hi' on page 4 undefined on input line 194.
+
+<02_image/gaussian_low.jpg, id=137, 462.528pt x 346.896pt>
+File: 02_image/gaussian_low.jpg Graphic file (type jpg)
+<use 02_image/gaussian_low.jpg>
+Package luatex.def Info: 02_image/gaussian_low.jpg  used on input line 200.
+(luatex.def)             Requested size: 230.46576pt x 172.84943pt.
+<02_image/gaussian_median.jpg, id=138, 462.528pt x 346.896pt>
+File: 02_image/gaussian_median.jpg Graphic file (type jpg)
+<use 02_image/gaussian_median.jpg>
+Package luatex.def Info: 02_image/gaussian_median.jpg  used on input line 207.
+(luatex.def)             Requested size: 230.46576pt x 172.84943pt.
+<02_image/gaussian_hi.jpg, id=139, 462.528pt x 346.896pt>
+File: 02_image/gaussian_hi.jpg Graphic file (type jpg)
+<use 02_image/gaussian_hi.jpg>
+Package luatex.def Info: 02_image/gaussian_hi.jpg  used on input line 216.
+(luatex.def)             Requested size: 230.46576pt x 172.84943pt.
+
+LaTeX Warning: Reference `fig:movemean_goma' on page 4 undefined on input line 
+227.
+
+
+LaTeX Warning: Reference `fig:movemean_spike' on page 4 undefined on input line
+ 227.
+
+
+LaTeX Warning: Reference `fig:gaussian_goma' on page 4 undefined on input line 
+228.
+
+
+LaTeX Warning: Reference `fig:gaussian_spike' on page 4 undefined on input line
+ 228.
+
+
+LaTeX Warning: Reference `fig:medianfilter_goma' on page 4 undefined on input l
+ine 229.
+
+
+LaTeX Warning: Reference `fig:medianfilter_spike' on page 4 undefined on input 
+line 229.
+
+<02_image/movemean_goma.jpg, id=140, 462.528pt x 346.896pt>
+File: 02_image/movemean_goma.jpg Graphic file (type jpg)
+<use 02_image/movemean_goma.jpg>
+Package luatex.def Info: 02_image/movemean_goma.jpg  used on input line 235.
+(luatex.def)             Requested size: 230.46576pt x 172.84943pt.
+<02_image/movemean_spike.jpg, id=143, 462.528pt x 346.896pt>
+File: 02_image/movemean_spike.jpg Graphic file (type jpg)
+<use 02_image/movemean_spike.jpg>
+Package luatex.def Info: 02_image/movemean_spike.jpg  used on input line 242.
+(luatex.def)             Requested size: 230.46576pt x 172.84943pt.
+<02_image/gaussian_goma.jpg, id=146, 462.528pt x 346.896pt>
+File: 02_image/gaussian_goma.jpg Graphic file (type jpg)
+<use 02_image/gaussian_goma.jpg>
+Package luatex.def Info: 02_image/gaussian_goma.jpg  used on input line 250.
+(luatex.def)             Requested size: 230.46576pt x 172.84943pt.
+<02_image/gaussian_spike.jpg, id=149, 462.528pt x 346.896pt>
+File: 02_image/gaussian_spike.jpg Graphic file (type jpg)
+<use 02_image/gaussian_spike.jpg>
+Package luatex.def Info: 02_image/gaussian_spike.jpg  used on input line 257.
+(luatex.def)             Requested size: 230.46576pt x 172.84943pt.
+<02_image/medianfilter_goma.jpg, id=152, 462.528pt x 346.896pt>
+File: 02_image/medianfilter_goma.jpg Graphic file (type jpg)
+<use 02_image/medianfilter_goma.jpg>
+Package luatex.def Info: 02_image/medianfilter_goma.jpg  used on input line 265
+.
+(luatex.def)             Requested size: 230.46576pt x 172.84943pt.
+<02_image/medianfilter_spike.jpg, id=155, 462.528pt x 346.896pt>
+File: 02_image/medianfilter_spike.jpg Graphic file (type jpg)
+<use 02_image/medianfilter_spike.jpg>
+Package luatex.def Info: 02_image/medianfilter_spike.jpg  used on input line 27
+2.
+(luatex.def)             Requested size: 230.46576pt x 172.84943pt.
+[4<./02_image/woman-goma.jpg><./02_image/woman-spike.jpg><./02_image/gaussian_lo
+w.jpg><./02_image/gaussian_median.jpg><./02_image/gaussian_hi.jpg>] [5]
+[6<./02_image/movemean_goma.jpg><./02_image/movemean_spike.jpg><./02_image/gauss
+ian_goma.jpg><./02_image/gaussian_spike.jpg><./02_image/medianfilter_goma.jpg><.
+/02_image/medianfilter_spike.jpg>] (./image_processing.aux)
  ***********
 LaTeX2e <2025-11-01>
 L3 programming layer <2026-03-20>
@@ -1361,33 +1580,58 @@ L3 programming layer <2026-03-20>
 LaTeX Font Warning: Size substitutions with differences
 (Font)              up to 0.5pt have occurred.
 
-Package rerunfilecheck Info: File `image_processing.out' has not changed.
-(rerunfilecheck)             Checksum: 649A2F79D6C4BFCE63B62C9AE3425F4E;839.
+
+LaTeX Warning: There were undefined references.
+
+
+LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
+
+
+Package rerunfilecheck Warning: File `image_processing.out' has changed.
+(rerunfilecheck)                Rerun to get outlines right
+(rerunfilecheck)                or use package `bookmark'.
+
+Package rerunfilecheck Info: Checksums for `image_processing.out':
+(rerunfilecheck)             Before: 649A2F79D6C4BFCE63B62C9AE3425F4E;839
+(rerunfilecheck)             After:  9FADD14F7221A0E6A27B0AEB2D858348;913.
 )
 
 Here is how much of LuaTeX's memory you used:
- 13900 strings out of 475900
+ 14009 strings out of 475900
  125244,662416 words of node,token memory allocated
  1066 words of node memory still in use:
    10 hlist, 2 vlist, 5 rule, 2 glue, 4 kern, 1 glyph, 203 attribute, 57 glue_sp
 ec, 30 attribute_list, 1 write, 13 user_defined nodes
-   avail lists: 1:7,2:21498,3:382,4:366,5:84,6:66,7:2733,8:9,9:1327,10:19,11:2
- 36123 multiletter control sequences out of 65536+600000
- 95 fonts using 77214127 bytes
- 119i,9n,112p,2040b,576s stack positions out of 10000i,1000n,20000p,200000b,200000s
-<c:/texlive/2026/texmf-dist/fonts/opentype/public/lm/lmroman9-regular.otf><c:/te
-xlive/2026/texmf-dist/fonts/opentype/public/haranoaji/HaranoAjiGothic-Medium.otf
-><c:/texlive/2026/texmf-dist/fonts/opentype/public/lm/lmsans12-regular.otf><c:/t
-exlive/2026/texmf-dist/fonts/opentype/public/lm/lmroman10-regular.otf><c:/texliv
-e/2026/texmf-dist/fonts/opentype/public/haranoaji/HaranoAjiMincho-Regular.otf><c
-:/texlive/2026/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb><c:/texlive/
-2026/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi9.pfb><c:/texlive/2026/texmf-
-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb><c:/texlive/2026/texmf-dist/fonts/
-type1/public/amsfonts/cm/cmr9.pfb>
-Output written on image_processing.pdf (6 pages, 592758 bytes).
+   avail lists: 1:6,2:29186,3:391,4:355,5:79,6:79,7:2616,8:154,9:1597,10:20,11:2
 
-PDF statistics: 195 PDF objects out of 1000 (max. 8388607)
- 138 compressed objects within 2 object streams
- 32 named destinations out of 1000 (max. 1048576)
+ 36195 multiletter control sequences out of 65536+600000
+ 94 fonts using 77082759 bytes
+ 119i,10n,112p,2040b,576s stack positions out of 10000i,1000n,20000p,200000b,200000s
+
+warning  (pdf backend): unreferenced destination with name 'figure.5'
+
+warning  (pdf backend): unreferenced destination with name 'figure.4'
+
+warning  (pdf backend): unreferenced destination with name 'figure.3'
+
+warning  (pdf backend): unreferenced destination with name 'figure.2'
+
+warning  (pdf backend): unreferenced destination with name 'figure.1'
+<c:/texlive/2026/texmf-dist/fonts/opentype/public/lm/lmroman10-bold.otf><c:/texl
+ive/2026/texmf-dist/fonts/opentype/public/lm/lmroman9-regular.otf><c:/texlive/20
+26/texmf-dist/fonts/opentype/public/haranoaji/HaranoAjiGothic-Medium.otf><c:/tex
+live/2026/texmf-dist/fonts/opentype/public/lm/lmsans12-regular.otf><c:/texlive/2
+026/texmf-dist/fonts/opentype/public/lm/lmroman10-regular.otf><c:/texlive/2026/t
+exmf-dist/fonts/opentype/public/haranoaji/HaranoAjiMincho-Regular.otf><c:/texliv
+e/2026/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb><c:/texlive/2026/tex
+mf-dist/fonts/type1/public/amsfonts/cm/cmmi7.pfb><c:/texlive/2026/texmf-dist/fon
+ts/type1/public/amsfonts/cm/cmmi9.pfb><c:/texlive/2026/texmf-dist/fonts/type1/pu
+blic/amsfonts/cm/cmr10.pfb><c:/texlive/2026/texmf-dist/fonts/type1/public/amsfon
+ts/cm/cmr9.pfb>
+Output written on image_processing.pdf (6 pages, 699957 bytes).
+
+PDF statistics: 241 PDF objects out of 1000 (max. 8388607)
+ 165 compressed objects within 2 object streams
+ 42 named destinations out of 1000 (max. 1048576)
  73 words of extra memory for PDF output out of 10000 (max. 100000000)
 
